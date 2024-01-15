@@ -8,5 +8,8 @@ build({
   sourcemap: true,
   format: 'iife',
   globalName: 'SolidityParser',
+  footer: {
+    js: 'export default SolidityParser;',
+  },
   outfile: path.resolve(__dirname, '../dist/index.iife.js'),
 }).catch(() => process.exit(1))
